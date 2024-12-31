@@ -134,8 +134,8 @@ app.register_blueprint(get_eventList)
 app.register_blueprint(create_event)
 
 
-@app.route("/",method=["GET"])
-def index():
+@app.route('/',methods=["GET"])
+def home():
     return "Hello, World!"
 
 
