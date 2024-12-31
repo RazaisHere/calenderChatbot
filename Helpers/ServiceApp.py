@@ -134,6 +134,11 @@ app.register_blueprint(get_eventList)
 app.register_blueprint(create_event)
 
 
+@app.route("/",method=["GET"])
+def index():
+    return "Hello, World!"
+
+
 @app.route('/test', methods=["GET"])
 def test():
     return "API is Working"
